@@ -7,12 +7,12 @@
 </head>  
 
 
-<body onload="setGame()"> 
+<body onload="setGame(0)"> 
 
 <div id="gameSlider"> 
 <img id="gameImg" src=""/>
-<button id="sliderLeftButton" onclick="nextGame()">PREV</button>
-<button id="sliderRightButton" onclick="nextGame()">NEXT</button>
+<button id="sliderLeftButton" onclick="changeSlider(-1)">PREV</button>
+<button id="sliderRightButton" onclick="changeSlider(+1)">NEXT</button>
 </div>  
  
 </body>
