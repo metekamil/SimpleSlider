@@ -1,0 +1,33 @@
+
+#gameImg {
+    
+    width:100%;  
+
+}
+
+#gameSlider {
+
+  width:100%; 
+  max-width:720px;
+  position:relative;
+
+}
+
+#sliderRightButton {
+  
+   position:absolute;
+   top:120px;
+   right:0px;
+   height:200px;
+
+}
+
+#sliderLeftButton {
+  
+   position:absolute;
+   top:120px;
+   left:0px;
+   height:200px;
+
+}
+ 

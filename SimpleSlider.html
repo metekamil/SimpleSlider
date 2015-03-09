@@ -1,75 +1,20 @@
 
 <head>
- 
-<style>
-#gameImg {
-    
-    width:100%;  
-
-}
-
-#gameSlider {
-
-  width:100%; 
-  max-width:720px;
-  position:relative;
-
-}
-
-#sliderRightButton {
   
-   position:absolute;
-   top:120px;
-   right:0px;
-   height:200px;
-
-}
-
-#sliderLeftButton {
+<script src="SimpleSlider.js"></script>
+<link rel="stylesheet" type="text/css" href="SimpleSlider.css">
   
-   position:absolute;
-   top:120px;
-   left:0px;
-   height:200px;
-
-}
-
-</style>
-
-<script>
- 
-var gameIdx=0; 
-var games=["Street Fighter","Shinobi"];
-var gamesImg=["http://console.com.ua/images/stories/greview/sf4walk/street-fighter-4-all.jpg","http://fc02.deviantart.net/fs71/f/2012/106/0/a/hotsuma_from_shinobi_by_mcflight-d4wg60u.jpg"];
-  
-function setGame(){
- 
-     var game=document.getElementById("gameImg");
-     game.src =gamesImg[gameIdx];
-    
-}
-
-function nextGame()
-{ 
-    gameIdx++; 
-    if (gameIdx>=2) {
-        gameIdx=0; 
-    }
-    setGame();
-}
-  
-</script>  
 </head>  
-<body onload="setGame()">
 
+
+<body onload="setGame()"> 
 
 <div id="gameSlider"> 
 <img id="gameImg" src=""/>
 <button id="sliderLeftButton" onclick="nextGame()">PREV</button>
 <button id="sliderRightButton" onclick="nextGame()">NEXT</button>
 </div>  
-
-
+ 
 </body>
 
 
